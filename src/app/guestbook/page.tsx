@@ -66,7 +66,7 @@ export default function GuestbookPage() {
       } else {
         setNickname("");
         setMessage("");
-        setSuccessMsg("응원 메시지가 서버 메모리에 등록되었어요! 🌱");
+        setSuccessMsg("응원 메시지가 등록되었어요! 🌱");
         // 목록 갱신
         fetchEntries();
       }
@@ -105,7 +105,7 @@ export default function GuestbookPage() {
         <p className="text-sm sm:text-base text-emerald-900/80 leading-relaxed">
           샬롬자유학교 학생들과 학교를 응원하는 메시지를 남겨주세요. 
           <br className="hidden sm:inline" />
-          남겨주신 글은 서버 메모리에 저장되어 모든 방문자가 함께 볼 수 있습니다.
+          남겨주신 글은 데이터베이스에 안전하게 저장되어 모든 방문자가 함께 볼 수 있습니다.
         </p>
       </section>
 
